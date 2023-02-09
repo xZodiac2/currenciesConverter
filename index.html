@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="currency-converter">
+            <div class="currencies">
+                <form>
+                    <select class="first-currency">
+                        <option value="rub">Рубль</option>
+                        <option value="dol">Доллар</option>
+                        <option value="eur">Евро</option>
+                    </select>
+                    <select class="second-currency">
+                        <option value="rub">Рубль</option>
+                        <option value="dol" selected>Доллар</option>
+                        <option value="eur">Евро</option>
+                    </select>
+                </form>
+            </div>
+            <div class="input-output">
+                <textarea class="input-value"></textarea>
+                <textarea class="output-value" readonly></textarea>
+            </div>
+            <button class="calculate">Рассчитать</button>
+        </div>
+        <div class="response"></div>
+    </div>
+<script type="module" src="index.js"></script>
+</body>
+</html>
